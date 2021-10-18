@@ -1,11 +1,9 @@
-### Lekcja 1
-# Building blocks (czyli co sklada sie na programowanie?)
+#### Lekcja 0
+# Przypomnienie z lekcji-wstepu
 
 </br>
 
-## Przypomnienie Lekcji 0
-
-#### Zalozenia
+### Zalozenia
 
 *(W telegraficznym skrocie)* **Oprogramowanie/aplikacja/system komputerowy/appka** to **kod (doslownie tekst napisany przez programiste)**, ktory mozna **wykonac**/uzyc na swoim komputerze. Oczywiscie oprogramowanie dzialajace na iPhonie (niemal zawsze) nie bedzie dzialac na laptopie z Windowsem ze wzg. na kompatybilnosc - ale o tym innym razem.
 
@@ -24,7 +22,7 @@ Przyklad - zalozmy, ze korzystamy ze strony MultiKino i szukamy filmu:
 <img src="https://user-images.githubusercontent.com/6330789/137776442-87ec77b4-8262-4c8e-8709-6f9832759bd7.png" />
 </p>
 
-#### Jezyk
+### Jezyk
 
 Do komunikacji z komputerem i opisywaniem tego, co ma robic (czyt. do programowania) uzywamy jezykow programowania. </br>
 Dla nauki absolutnych podstaw wybralem jezyk programowania **JavaScript**. </br>
@@ -32,7 +30,7 @@ Niegdys sluzyl jedynie do dodawania sniegu na stronach internetowych, dzis jest 
 Materialow dotyczacych tego jezyka jest mnostwo w Internecie, a jednym z najlepszych (i przetlumaczonym na jezyk polski) jest strona **Mozilla Developer Network**:
 https://developer.mozilla.org/pl/docs/Web/JavaScript
 
-#### Srodowisko programistyczne
+### Srodowisko programistyczne
 
 Kod (ang. code) to  fragment tekstu napisanym uzywajac skladni (ang. syntax) danego jezyka programowania (ang. programming language).</br>
 Kod zazwyczaj piszemy w jakims srodowisku programistycznym zwanym **IDE** (ang. Integrated Development Environment).</br>
