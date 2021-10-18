@@ -7,7 +7,7 @@
 
 ### Zalozenia
 
-*(W telegraficznym skrocie)* **Oprogramowanie/aplikacja/system komputerowy/appka** to **kod (doslownie tekst napisany przez programiste)**, ktory mozna **wykonac**/uzyc na swoim komputerze. Oczywiscie oprogramowanie dzialajace na iPhonie (niemal zawsze) nie bedzie dzialac na laptopie z Windowsem ze wzg. na kompatybilnosc - ale o tym innym razem.
+*(W telegraficznym skrocie)* **Oprogramowanie**/aplikacja/system komputerowy/appka to **kod** (doslownie tekst napisany przez programiste), ktory mozna **wykonac**/uzyc na swoim komputerze. Oczywiscie oprogramowanie dzialajace na iPhonie (niemal zawsze) nie bedzie dzialac na laptopie z Windowsem ze wzg. na kompatybilnosc - ale o tym innym razem.
 
 Glownym celem oprogramowania (czyli tego, co tworzymy poprzez programowanie) jest automatyzacja (lub cyfryzacja):
 - czegos co albo istnieje juz w otaczajacym nas swiecie 
