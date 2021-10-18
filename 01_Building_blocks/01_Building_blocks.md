@@ -143,6 +143,8 @@ Oto moj wynik szukajac po slowach kluczowych zwiazanych z w/w zagadnieniem:
 <img src="https://user-images.githubusercontent.com/6330789/137793349-efbc1699-ec9c-4b70-9a26-a1d09db9104e.png" />
 </p>
 
+<br>
+
 ### Zadanie 2.2
 
 Skoro juz wiesz jak opisywac obiekty wokol siebie, wybierz inna rzecz (ktora zawiera wiele podobnych rzeczy w sobie) z otaczajacej Cie rzeczywistosci i opisz go w sposob podobny do tego, jak opisalismy biblioteczke.
