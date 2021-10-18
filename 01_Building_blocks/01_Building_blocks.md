@@ -14,3 +14,5 @@ Wlasciwie kazde oprogramowanie bedzie mialo:
 - `wynik` operacji, ktory otrzymamy w odpowiedzi na zdarzenie (zazwyczaj beda to jakies `dane` ale moze byc to tez tylko status w postaci jakiegos kodu, np. "OK")
 
 Przyklad takich skladowych korzystajac z przegladarki:
+
+![actor drawio](https://user-images.githubusercontent.com/6330789/137776442-87ec77b4-8262-4c8e-8709-6f9832759bd7.png)
