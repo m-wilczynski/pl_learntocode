@@ -1,7 +1,11 @@
 ### Lekcja 1
 # Building blocks (czyli co sklada sie na programowanie?)
 
-### Przypomnienie Lekcji 0
+</br>
+
+## Przypomnienie Lekcji 0
+
+##### Zalozenia
 
 Glownym celem oprogramowania (czyli tego, co tworzymy poprzez programowanie) jest automatyzacja (lub cyfryzacja):
 - czegos co albo istnieje juz w otaczajacym nas swiecie 
@@ -17,3 +21,10 @@ Przyklad - zalozmy, ze korzystamy ze strony MultiKino i szukamy filmu:
 <p align="center">
 <img src="https://user-images.githubusercontent.com/6330789/137776442-87ec77b4-8262-4c8e-8709-6f9832759bd7.png" />
 </p>
+
+##### Jezyk
+
+Do komunikacji z komputerem i opisywaniem tego, co ma robic (czyt. do programowania) uzywamy jezykow programowania. </br>
+Dla nauki absolutnych podstaw wybralem jezyk programowania **JavaScript**. </br>
+Niegdys sluzyl jedynie do dodawania sniegu na stronach internetowych, dzis jest jednym z najpopularniejszych jezykow programowania zarowno dla hobbystow jak i profesjonalistow. </br>
+Materialow dotyczacych tego jezyka jest mnostwo w Internecie, a jednym z najlepszych (i przetlumaczonym na jezyk polski) jest strona Mozilla Developer Network:
