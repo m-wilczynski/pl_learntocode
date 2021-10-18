@@ -41,6 +41,7 @@ Dlaczego uzywamy IDE? Ano dlatego, by pracowac szybciej (dzieki podpowiedziom), 
 
 Na potrzeby pierwszych lekcji bedziemy korzystac z wbudowanej konsoli w kazda przegladarke, ktora nazywa sie **Developer Tools** (lub DevTools).<br>
 By uruchomic DevTools uzyj na dowolnej otwartej stronie (polecam na start google.pl) klawisza `F12`. Powinno otworzyc sie nowe okno.<br>
+
 Przyklad okna DevTools dla przegladarki Chrome:<br>
 <p align="center">
 <img src="https://user-images.githubusercontent.com/6330789/137780562-9483d0eb-dc97-4a55-b0a5-f62fc6b57eee.png" />
