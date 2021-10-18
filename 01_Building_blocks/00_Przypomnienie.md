@@ -29,7 +29,7 @@ Przyklad - zalozmy, ze korzystamy ze strony MultiKino i szukamy filmu:
 
 Do komunikacji z komputerem i opisywaniem tego, co ma robic (czyt. do programowania) uzywamy jezykow programowania. </br>
 Dla nauki absolutnych podstaw wybralem jezyk programowania **JavaScript**. </br>
-Niegdys sluzyl jedynie do dodawania sniegu na stronach internetowych, dzis jest jednym z najpopularniejszych jezykow programowania zarowno dla hobbystow jak i profesjonalistow. </br>
+Niegdys sluzyl jedynie do dodawania sniegu na stronach internetowych - dzis jest jednym z najpopularniejszych jezykow programowania zarowno dla hobbystow jak i profesjonalistow. </br>
 Materialow dotyczacych tego jezyka jest mnostwo w Internecie, a jednym z najlepszych (i przetlumaczonym na jezyk polski) jest strona **Mozilla Developer Network**:
 https://developer.mozilla.org/pl/docs/Web/JavaScript
 
