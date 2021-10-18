@@ -73,6 +73,8 @@ ksiazka.sredniaOcena = 7.9;
 ```
 Zauwaz, ze by dostac sie "do srodka" dowolnego obiektu uzywamy znaku kropki, po ktorym mozemy odczytac lub zmodyfikowac **pole obiektu**. Gdybysmy chcieli np. zbadac pozostale litry paliwa w obiekcie `samochod`
 
+### Typy prymitywne
+
 Przy okazji tworzenia nowego obiektu (klamry: `{}`) poznalismy tez sposob korzystania z podstawowych typow prymitywnych:
 - tekstu (ang. string), ktory opisujemy w pojedynczym lub podwojnym cudzyslowiu `'to jest moj tekst'`
 - liczb calkowitych (ang. integer/int), np. `340`
