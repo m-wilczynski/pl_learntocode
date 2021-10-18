@@ -3,6 +3,8 @@
 
 </br>
 
+*(celowo wszystkie wazne nazwy maja w nawiasie tlumaczenia, by latwiej bylo ich potem szukac w Internecie)*
+
 ### Zalozenia
 
 *(W telegraficznym skrocie)* **Oprogramowanie/aplikacja/system komputerowy/appka** to **kod (doslownie tekst napisany przez programiste)**, ktory mozna **wykonac**/uzyc na swoim komputerze. Oczywiscie oprogramowanie dzialajace na iPhonie (niemal zawsze) nie bedzie dzialac na laptopie z Windowsem ze wzg. na kompatybilnosc - ale o tym innym razem.
@@ -18,6 +20,7 @@ Wlasciwie kazde oprogramowanie bedzie mialo:
 - `wynik` operacji, ktory otrzymamy w odpowiedzi na zdarzenie (zazwyczaj beda to jakies `dane` ale moze byc to tez tylko status w postaci jakiegos kodu, np. "OK")
 
 Przyklad - zalozmy, ze korzystamy ze strony MultiKino i szukamy filmu:
+<br>
 <p align="center">
 <img src="https://user-images.githubusercontent.com/6330789/137776442-87ec77b4-8262-4c8e-8709-6f9832759bd7.png" />
 </p>
@@ -32,8 +35,8 @@ https://developer.mozilla.org/pl/docs/Web/JavaScript
 
 ### Srodowisko programistyczne
 
-Kod (ang. code) to  fragment tekstu napisanym uzywajac skladni (ang. syntax) danego jezyka programowania (ang. programming language).</br>
-Kod zazwyczaj piszemy w jakims srodowisku programistycznym zwanym **IDE** (ang. Integrated Development Environment).</br>
+Kod *(ang. code)* to fragment tekstu napisanym uzywajac skladni *(ang. syntax)* danego jezyka programowania *(ang. programming language)*.</br>
+Kod zazwyczaj piszemy w jakims srodowisku programistycznym zwanym **IDE** *(ang. Integrated Development Environment)*.</br>
 Dlaczego uzywamy IDE? Ano dlatego, by pracowac szybciej (dzieki podpowiedziom), popelniac mniej bledow (bledy sa podkreslane) i zeby ogolnie bylo nam wygodniej (mnostwo wtyczek, kolorowanie skladni, autozapis, wlasne preferencje etc.).<br>
 
 Na potrzeby pierwszych lekcji bedziemy korzystac z wbudowanej konsoli w kazda przegladarke, ktora nazywa sie **Developer Tools** (lub DevTools).<br>
