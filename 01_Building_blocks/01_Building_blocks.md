@@ -78,3 +78,9 @@ Przy okazji tworzenia nowego obiektu (klamry: `{}`) poznalismy tez sposob korzys
 - liczb calkowitych (ang. integer/int), np. `340`
 - wartosci logicznych (ang. boolean/bool): `true` lub `false`
 - liczb zmiennoprzecinkowych (ang. float, double i decimal*), np. `7.9`
+
+### Cwiczenie 1.1
+
+Wybierz z twojego otoczenia trzy przedmioty i zaprogramuj je jako obiekty w konsoli.<br>
+Kazdy obiekt powinien miec conajmniej trzy pola: tekstowe, liczbowe i logiczne.<br>
+Po utworzeniu wszystkich trzech obiektow wypisz pole przechowujace wartosc tekstowa kazdego z nich.<br>
