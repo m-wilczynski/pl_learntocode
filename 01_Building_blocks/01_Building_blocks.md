@@ -8,7 +8,7 @@
 ### Zalozenia
 
 W ramach lekcji 0 powiedzielismy sobie, ze program/oprogramowanie opiera sie o:
-1. uzytkownika oprogramowania
+1. uzytkownika oprogramowania (jego oczywiscie nie bedziemy oprogramowywac :) )
 2. zdarzenia, na ktore program reaguje
 3. operacje, ktore program wykonuje
 4. wynik/dane, ktore program zwraca
