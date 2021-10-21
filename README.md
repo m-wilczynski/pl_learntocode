@@ -8,6 +8,9 @@ Basics of computer programming taught in Polish. Beyond this section everything 
 
 ## Zawartosc
 
-0. ✅ Lekcja 0 - wprowadzenie (co i dlaczego?)
-1. ✅ Lekcja 1 - konsola przegladarki, podstawy skladni JavaScript, obiekty
+Materialy do lekcji sa dosc luzno opisane, poniewaz sluza jako dodatek do prowadzonych na zywo zajec. <br>
+Jesli masz jednak natkniesz sie na to repozytorium, masz jakies pytania i potrzebujesz wytlumaczenia - daj znac. :)
+
+0. ✅ [Lekcja 0](https://github.com/m-wilczynski/pl_learntocode/blob/main/01_Building_blocks/00_Przypomnienie.md) - wprowadzenie (co i dlaczego?)
+1. ✅ [Lekcja 1](https://github.com/m-wilczynski/pl_learntocode/blob/main/01_Building_blocks/01_Building_blocks.md) - konsola przegladarki, podstawy skladni JavaScript, obiekty
 2. ⏳ Lekcja 2 - funkcje w JavaScript, praca z IDE, podstawy HTML
