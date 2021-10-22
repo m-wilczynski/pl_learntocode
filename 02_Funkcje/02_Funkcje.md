@@ -82,7 +82,7 @@ Otworz teraz DevTools (F12) i sprobuj uzyc testowej funkcji `test()`, ktora zdef
 
 ### Zadanie 2.2
 
-Przenies to, co przecwiczylismy na poczatku tej lekcji w ramach sekcji *Funkcje* i przetestuj wciaz czy dziala.
+Przenies to, co przecwiczylismy na poczatku tej lekcji w ramach sekcji *Funkcje* i *Instrukcje warunkowe* i przetestuj wciaz czy dziala.
 
 ### HTML i struktura dokumentu strony internetowej
 
