@@ -78,7 +78,7 @@ Teraz otworz plik `index.html` w przegladarce (dwuklik na tym pliku w folderze `
 Nowootwarta strona powinna wygladac +/- tak:<br>
 ![image](https://user-images.githubusercontent.com/6330789/138524140-edd7f9a5-67d5-46e1-863e-04deb937f0e3.png)
 
-Otworz teraz DevTools (F12) i sprobuj uzyc testowej funkcji `test()`, ktora zdefiniowalismy w pliku `site.js`.
+Otworz teraz DevTools (F12) i sprobuj uzyc testowej funkcji `test()`, ktora zdefiniowalismy w pliku `site.js`. Powinnismy zobaczyc wypisane *Hello World!*.
 
 ### Zadanie 2.2
 
