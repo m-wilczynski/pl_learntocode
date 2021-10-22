@@ -20,11 +20,11 @@ https://code.visualstudio.com/download
 
 ### Funkcje
 
-
+...
 
 ### Instrukcje warunkowe
 
-
+...
 
 ### Zmieniamy srodowisko na VS Code
 
@@ -86,6 +86,8 @@ Przenies to, co przecwiczylismy na poczatku tej lekcji w ramach sekcji *Funkcje*
 
 ### HTML i struktura dokumentu strony internetowej
 
-
+...
 
 ### Laczymy operacje (funkcje w JavaScript) z widokiem (dokument w HTML)
+
+...
