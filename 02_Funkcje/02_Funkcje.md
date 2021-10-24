@@ -13,14 +13,106 @@ https://code.visualstudio.com/download
 ### Powtorka - lekcja 1
 
 1. Czym sa zmienne?
-2. Czym sa obiekty? Z czego sie skladaja?
-3. Jak ustawisz, a nastepnie wypiszesz ceche "gatunek" obiektu reprezentujacego domowego pupila `let myPet = {}`? 
-4. Czego uzyjesz do przechowania wielu wartosci? Z czego sklada sie ta konstrukcja programistyczna?
+2. Jakie znasz typy prymitywne? Wymien ich angielskie nazwy.
+3. Czym sa obiekty? Z czego sie skladaja?
+4. Jak ustawisz, a nastepnie wypiszesz ceche "gatunek" obiektu reprezentujacego domowego pupila `let myPet = {}`? 
+5. Czego uzyjesz do przechowania wielu wartosci? Z czego sklada sie ta konstrukcja programistyczna?
 
 
 ### Funkcje
 
-...
+Funkcje realizuja jedna ze skladowych programu, o ktorej mowilismy w lekcji 0 - **operacje**.<br>
+Funkcje moga byc `globalne` (tzn. nie przynaleza do zadnego obiektu) lub `obiektu` (sa czescia danego obiektu).<br>
+W kontekscie obiektow, czasem mowi sie, ze skoro pola reprezentuja cechy obiektu, to funkcje (jesli sa jego czescia) reprezentuja zachowanie.
+
+Posluzmy sie przykladem obiektu `Ksiazka` z Lekcji 1...
+```javascript
+let book = {};
+book.title = 'Harry Potter and Philosophers Stone';
+book.pagesCount = 340;
+book.wasRead = true;
+```
+...i dodajmy do niej mozliwosc oceniania podobna do serwisu Reddit czy Wykop (`+` jako lubie, `-` jako nie lubie).<br>
+Za kazdym razem, gdy ktos ocenia ksiazke, zaktualizujemy obecny wynik ksiazki.<br>
+Zacznijmy od dodania pola, ktore bedzie reprezentowac obecny wynik:
+```javascript
+book.currentScore = 0; //Zaczynamy od zera - nikt jeszcze nie ocenil
+```
+
+Dodajmy teraz mozliwosc glosowania na dana ksiazke w formie funkcji:
+```javascript
+book.like = function() {
+    this.currentScore = this.currentScore + 1; //Lubie: +1 do wyniku
+    console.log('Obecny wynik to: ' + this.currentScore);
+}
+
+book.dislike = function() {
+    this.currentScore = this.currentScore - 1; //Nie lubie: -1 do wyniku
+    console.log('Obecny wynik to: ' + this.currentScore);
+}
+```
+
+> **Zwroc uwage na slowo kluczowe `this`**, ktore uzylismy. Jest ono niczym innym jak wskazaniem "na siebie samego" wewnatrz danego obiektu.<br>
+> Dla wyzej wspomnianego obiektu trzymanego w zmiennej `book` slowo kluczowe `this` uzyte "wewnatrz tego obiektu" oznacza po prostu obiekt `book`.
+
+Skladnia funkcji to: deklaracja, ze to funkcja poprzez slowo kluczowe `function`, nawiasy "okragle" tzn. `(argument1, argument2, ...)`, ktore mowia "co wchodzi do funkcji" (w naszym przypadku nic, dlatego `()`) oraz kodu, ktory wykona sie po wywolaniu (uzyciu) funkcji w ramach klamr `{}`.<br>
+W powyzszym przykladzie obiektowi `book` przypisalismy funkcje do polubienia pod nazwa `like` i funkcje do nielubienia jako `dislike`.<br>
+W jezyku JavaScript funkcje obiektu definiujemy w ten sam sposob, co przypisanie wartosci do pola tego obiektu.
+
+Sprobujmy teraz uzyc naszej funkcji i zaczac glosowac na nasza ksiazke:
+```javascript
+book.like();
+book.dislike();
+book.dislike();
+book.dislike();
+```
+
+Wynik powinien wyniesc -2.
+
+### Reuzywalnosc funkcji
+
+Powiedzielismy, ze funkcje tworzymy, by realizowac operacje lub zachowanie obiektu.<br>
+Jest jednak jeszcze jeden, rownie wazny powod: **reuzywalnosc**.<br>
+Funkcje, ktora do tej pory uzywalismy byly proste ale wyobraz sobie, ze piszesz funkcjonalnosc sortowania ksiazek alfabetycznie wewnatrz biblioteczki.<br>
+Raz napisana funkcja sortowania pozwoli nam utrzymac porzadek alfabetyczny bez koniecznosci pisania kodu sortowania za kazdym dodaniem ksiazki.
+
+Gdy juz mamy funkcje `sortAlphabetically`, wystarczy nam uzycie jej gdy tylko tego potrzebujemy:
+```javascript
+//Zalozmy, ze obiekt biblioteczki (bookshelf) oraz funkcja sortowania zostaly juz wczesniej zadeklarowane
+bookshelf.books.push(newBook);
+bookshelf.sortAlphabetically(); //Przywroc porzadek alfabetyczny
+bookshelf.books.push(anotherNewBook);
+bookshelf.sortAlphabetically(); //Przywroc porzadek alfabetyczny
+```
+
+Sama **reuzywalnosc pozwala nam tez na standaryzacje podejscia do roznych rzeczy** w ramach danego obiektu.<br>
+Np. zauwaz, ze dla przykladu ksiazki, ktory rozszerzylismy o mozliwosc glosowania/oceniania mamy dwie, takie same linie wewnatrz funkcji `like` i `dislike`:
+```javascript
+    console.log('Obecny wynik to: ' + this.currentScore);
+```
+Gdy zdecydujemy, ze chcemy zmienic sposob wypisywania obecnego wyniku ksiazki, musielibysmy za kazdym razem modyfikowac obie te funkcje. <br>
+Co gorsza, gdybysmy chcieli robic to tez w ramach innej, nowej funkcji, musielibysmy znow przekopiowac ta linijke i pamietac, by ja aktualizowac gdy cos sie zmieni.
+
+Zamiast tego mozemy ustandaryzowac wypisywanie obecnego wyniku w ramach oddzielnej funkcji i po prostu z niej korzystac:
+```javascript
+//Nowa funkcja dla wypisywania wyniku:
+book.printScore = function() {
+    console.log('Obecny wynik to: ' + this.currentScore);
+}
+
+book.like = function() {
+    this.currentScore = this.currentScore + 1; //Lubie: +1 do wyniku
+    this.printScore(); //uzywamy nowej funkcji
+}
+
+book.dislike = function() {
+    this.currentScore = this.currentScore - 1; //Nie lubie: -1 do wyniku
+    this.printScore(); //uzywamy nowej funkcji
+}
+```
+Zauwaz, ze niewazne ile funkcji nie korzystalo by z funkcji `printScore` (niewazne czy "wewnatrz" czy "z zewnatrz" obiektu) ich wypisywany komunikat bedzie spojny i ten sam.
+
+> Dobra praktyka i nawykiem jest wylapywanie sytuacji jak powyzsza i **wydzielanie** wspoldzielonych funkcjonalnosci, tak by mozna je bylo reuzyc.
 
 ### Instrukcje warunkowe
 
