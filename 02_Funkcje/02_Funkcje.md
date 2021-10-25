@@ -134,7 +134,7 @@ Zauwaz, ze niewazne ile funkcji nie korzystalo by z funkcji `printScore` (niewaz
 
 ### Zmieniamy srodowisko na VS Code
 
-*(UWAGA! Ten podrozdzial to wlasciwie INSTRUKCJA. Nie probuj niczego z tego wkurwac - sama bieglosc przyjdzie z czasem wraz z korzystaniem z narzedzia)*
+*(UWAGA! Ten podrozdzial to wlasciwie INSTRUKCJA. Nie probuj niczego z tego wkuwac - sama bieglosc przyjdzie z czasem wraz z korzystaniem z narzedzia)*
 
 Zacznijmy od stworzenia folderu, w ktorym bedziemy pracowac. Nazwijmy go `lekcja2`.
 
