@@ -23,7 +23,7 @@ https://code.visualstudio.com/download
 
 Funkcje realizuja jedna ze skladowych programu, o ktorej mowilismy w lekcji 0 - **operacje**.<br>
 Funkcje moga byc `globalne` (tzn. nie przynaleza do zadnego obiektu) lub `obiektu` (sa czescia danego obiektu).<br>
-W kontekscie obiektow, czasem mowi sie, ze skoro pola reprezentuja cechy obiektu, to funkcje (jesli sa jego czescia) reprezentuja zachowanie.
+W kontekscie obiektow, czasem mowi sie, ze skoro pola reprezentuja cechy obiektu, to funkcje (jesli sa jego czescia) reprezentuja jego zachowanie.
 
 Posluzmy sie przykladem obiektu `Ksiazka` z Lekcji 1...
 ```javascript
@@ -33,7 +33,7 @@ book.pagesCount = 340;
 book.wasRead = true;
 ```
 ...i dodajmy do niej mozliwosc oceniania podobna do serwisu Reddit czy Wykop (`+` jako lubie, `-` jako nie lubie).<br>
-Za kazdym razem, gdy ktos ocenia ksiazke, zaktualizujemy obecny wynik ksiazki.<br>
+Za kazdym razem, gdy ktos ocenia ksiazke, zaktualizujemy obecny wynik ksiazki i go wypiszemy.<br>
 Zacznijmy od dodania pola, ktore bedzie reprezentowac obecny wynik:
 ```javascript
 book.currentScore = 0; //Zaczynamy od zera - nikt jeszcze nie ocenil
@@ -43,7 +43,7 @@ Dodajmy teraz mozliwosc glosowania na dana ksiazke w formie funkcji:
 ```javascript
 book.like = function() {
     this.currentScore = this.currentScore + 1; //Lubie: +1 do wyniku
-    console.log('Obecny wynik to: ' + this.currentScore);
+    console.log('Obecny wynik to: ' + this.currentScore); //stringi (czyli teksty) sklejamy znakiem dodawania
 }
 
 book.dislike = function() {
@@ -78,9 +78,13 @@ Raz napisana funkcja sortowania pozwoli nam utrzymac porzadek alfabetyczny bez k
 
 Gdy juz mamy funkcje `sortAlphabetically`, wystarczy nam uzycie jej gdy tylko tego potrzebujemy:
 ```javascript
-//Zalozmy, ze obiekt biblioteczki (bookshelf) oraz funkcja sortowania zostaly juz wczesniej zadeklarowane
+let bookshelf = {};
+bookshelf.books = [];
+bookshelf.sortAlphabetically = function() { /* tu bylaby nasza implementacja sortowania */ };
+let newBook = { title: 'Harry Potter' };
 bookshelf.books.push(newBook);
 bookshelf.sortAlphabetically(); //Przywroc porzadek alfabetyczny
+let anotherNewBook = { title: 'Przygoda z owca' };
 bookshelf.books.push(anotherNewBook);
 bookshelf.sortAlphabetically(); //Przywroc porzadek alfabetyczny
 ```
@@ -113,10 +117,6 @@ book.dislike = function() {
 Zauwaz, ze niewazne ile funkcji nie korzystalo by z funkcji `printScore` (niewazne czy "wewnatrz" czy "z zewnatrz" obiektu) ich wypisywany komunikat bedzie spojny i ten sam.
 
 > Dobra praktyka i nawykiem jest wylapywanie sytuacji jak powyzsza i **wydzielanie** wspoldzielonych funkcjonalnosci, tak by mozna je bylo reuzyc.
-
-### Instrukcje warunkowe
-
-...
 
 ### Zmieniamy srodowisko na VS Code
 
@@ -172,9 +172,34 @@ Nowootwarta strona powinna wygladac +/- tak:<br>
 
 Otworz teraz DevTools (F12) i sprobuj uzyc testowej funkcji `test()`, ktora zdefiniowalismy w pliku `site.js`. Powinnismy zobaczyc wypisane *Hello World!*.
 
-### Zadanie 2.2
+### Zadanie 2.1
 
 Przenies to, co przecwiczylismy na poczatku tej lekcji w ramach sekcji *Funkcje* i *Instrukcje warunkowe* i przetestuj wciaz czy dziala.
+
+### Instrukcje warunkowe
+
+Funkcje (niewazne czy wydaja Ci sie teraz skomplikowane czy nie) same w sobie nie pozwalaja na zbyt wiele bez inny konstruktow, dostepnych w programowaniu.<br>
+Jednym z najwazniejszych takich konstruktow jest **instrukcja warunkowa**, ktora mozemy uzywac jedynie wewnatrz funkcji (lub w szczegolnym przypadku w ramach deklaracji zmiennej).<br>
+Jej dzialanie jest dosc intuicyjne: `jezeli (warunek) to X, w przeciwnym wypadku Y`. W miejscu `(warunek)` zawsze musi znajdowac sie albo zmienna typu `bool`/`boolean` (nazwa rozni sie zaleznie od jezyka) lub wyrazenie logiczne (tzn. takie, z ktorego wynikac moga tylko dwa wyniki: tak (`true`) lub nie (`false`)).
+
+Wykorzystajmy ponownie przyklad z ksiazka i - podmieniajac funkcje `book.printScore` - dodajmy do naszego wypisywania:
+- `'Niezle!'` - jesli wynik jest dodatni
+- `'Oh nie...'` - jesli wynik jest ujemny
+
+Oto jak to zrobic:
+```javascript
+//Zmieniona funkcja wypisywania
+book.printScore = function() {
+    //Jezeli (if) obecny wynik > 0
+    if (this.currentScore > 0) {
+        console.log('Hurra! Obecny wynik to: ' + this.currentScore);
+    }
+    //W przeciwnym razie (else)
+    else {
+        console.log('Oh nie... Obecny wynik to: ' + this.currentScore);
+    }
+}
+```
 
 ### HTML i struktura dokumentu strony internetowej
 
