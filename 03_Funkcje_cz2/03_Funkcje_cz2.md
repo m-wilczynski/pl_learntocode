@@ -3,7 +3,7 @@
 
 </br>
 
-### Powtorka - lekcja 1
+### Powtorka - lekcja 2
 
 ...
 
