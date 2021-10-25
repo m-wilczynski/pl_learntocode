@@ -55,8 +55,12 @@ book.dislike = function() {
 > **Zwroc uwage na slowo kluczowe `this`**, ktore uzylismy. Jest ono niczym innym jak wskazaniem "na siebie samego" wewnatrz danego obiektu.<br>
 > Dla wyzej wspomnianego obiektu trzymanego w zmiennej `book` slowo kluczowe `this` uzyte "wewnatrz tego obiektu" oznacza po prostu obiekt `book`.
 
-Skladnia funkcji to: deklaracja, ze to funkcja poprzez slowo kluczowe `function`, nawiasy "okragle" tzn. `(argument1, argument2, ...)`, ktore mowia "co wchodzi do funkcji" (w naszym przypadku nic, dlatego `()`) oraz kodu, ktory wykona sie po wywolaniu (uzyciu) funkcji w ramach klamr `{}`. W ramach klamr moze (ale nie musi) znajdowac sie slowo kluczowe `return`, ktore pozwala nam zwrocic wynik z funkcji. Wywolanie `return` konczy dzialanie funkcji.<br>
-W powyzszym przykladzie obiektowi `book` przypisalismy funkcje do polubienia pod nazwa `like` i funkcje do nielubienia jako `dislike`.<br>
+Skladnia funkcji to: 
+- deklaracja, ze to funkcja poprzez slowo kluczowe `function`, 
+- nawiasy "okragle" tzn. `(argument1, argument2, ...)`, ktore mowia "co wchodzi do funkcji" (w naszym przypadku nic, dlatego `()`) 
+- oraz kodu, ktory wykona sie po wywolaniu (uzyciu) funkcji w ramach klamr `{}`. W ramach klamr moze (ale nie musi) znajdowac sie slowo kluczowe `return`, ktore pozwala nam zwrocic wynik z funkcji. Wywolanie `return` konczy dzialanie funkcji.<br>
+W powyzszym przykladzie obiektowi `book` przypisalismy funkcje do polubienia pod nazwa `like` i funkcje do nielubienia jako `dislike`.
+
 W jezyku JavaScript funkcje obiektu definiujemy w ten sam sposob, co przypisanie wartosci do pola tego obiektu.
 
 Sprobujmy teraz uzyc naszej funkcji i zaczac glosowac na nasza ksiazke:
@@ -129,6 +133,8 @@ Zauwaz, ze niewazne ile funkcji nie korzystalo by z funkcji `printScore` (niewaz
 > Dobra praktyka i nawykiem jest wylapywanie sytuacji jak powyzsza i **wydzielanie** wspoldzielonych funkcjonalnosci, tak by mozna je bylo reuzyc.
 
 ### Zmieniamy srodowisko na VS Code
+
+*(UWAGA! Ten podrozdzial to wlasciwie INSTRUKCJA. Nie probuj niczego z tego wkurwac - sama bieglosc przyjdzie z czasem wraz z korzystaniem z narzedzia)*
 
 Zacznijmy od stworzenia folderu, w ktorym bedziemy pracowac. Nazwijmy go `lekcja2`.
 
