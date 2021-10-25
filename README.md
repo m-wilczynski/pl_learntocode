@@ -13,4 +13,5 @@ Jesli jednak natkniesz sie na to repozytorium, masz jakies pytania i potrzebujes
 
 0. ✅ [Lekcja 0](https://github.com/m-wilczynski/pl_learntocode/blob/main/01_Building_blocks/00_Przypomnienie.md) - wprowadzenie (co i dlaczego?)
 1. ✅ [Lekcja 1](https://github.com/m-wilczynski/pl_learntocode/blob/main/01_Building_blocks/01_Building_blocks.md) - konsola przegladarki, podstawy skladni JavaScript, obiekty
-2. ⏳ [Lekcja 2](https://github.com/m-wilczynski/pl_learntocode/blob/main/02_Funkcje/02_Funkcje.md) - funkcje w JavaScript, praca z IDE, podstawy HTML
+2. ✅ [Lekcja 2](https://github.com/m-wilczynski/pl_learntocode/blob/main/02_Funkcje/02_Funkcje.md) - funkcje w JavaScript, praca z IDE
+3. ⏳ [Lekcja 3](https://github.com/m-wilczynski/pl_learntocode/blob/main/03_Funkcje_cz2/03_Funkcje_cz2.md) - funkcje ciag dalszy, podstawy HTML
