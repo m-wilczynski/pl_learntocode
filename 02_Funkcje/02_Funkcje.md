@@ -288,3 +288,4 @@ horoscope.getZodiacSign = function(birthDate) {
 }
 
 ```
+Wiecej o samym wbudowanym obiekcie `Date` reprezentujacym date w jezyku Javascript znajdziesz w MDN: https://developer.mozilla.org/pl/docs/Web/JavaScript/Reference/Global_Objects/Date
