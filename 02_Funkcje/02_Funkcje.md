@@ -190,9 +190,11 @@ Otworz teraz DevTools (F12) i sprobuj uzyc naszej testowej, **globalnej funkcji*
 
 ### Zadanie 2.1
 
-Przenies to, co przecwiczylismy na poczatku tej lekcji w ramach sekcji *Funkcje* i *Instrukcje warunkowe* i przetestuj wciaz czy dziala.
+Przenies to, co przecwiczylismy na poczatku tej lekcji w ramach sekcji *Funkcje* i *Reuzywalnosc funkcji* i przetestuj wciaz czy dziala.
 
 ### Operatory, wyrazenia logiczne i logika Boole'a
+
+*(od teraz wszystkie przyklady przepisuj do IDE (VS Code) zamiast bezposrednio do konsoli przegladarki)*
 
 W lekcji pierwszej powiedzielismy sobie o 4 typach prymitywnych (czasem nazywanymi tez "typami prostymi"). Pominmy na razie liczby zmiennoprzecinkowe.<br>
 Najbardziej naturalnym typem kojarzacym sie nam z funkcjami jest oczywiscie *liczba calkowita* - `int`. Dostepne operatory na liczbach calkowitych to m.in. `+`, `-`, `*` i `/`, sluzace do podstawowych operacji arytmetycznych.<br>
