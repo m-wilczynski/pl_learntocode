@@ -73,7 +73,7 @@ book.dislike();
 
 Wynik powinien wyniesc -2.
 
-Przecwiczmy jeszcze wspomiane slowo kluczowe `return`:
+Przecwiczmy jeszcze wspomiane slowo kluczowe `return`. Zdefiniujmy prosta klase, ktora bedzie zwracac obecna stawke VAT:
 ```javascript
 let taxes = {};
 taxes.getVat = function() { return 0.23; }
