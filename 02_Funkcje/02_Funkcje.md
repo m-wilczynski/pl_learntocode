@@ -176,6 +176,10 @@ Otworz teraz DevTools (F12) i sprobuj uzyc testowej funkcji `test()`, ktora zdef
 
 Przenies to, co przecwiczylismy na poczatku tej lekcji w ramach sekcji *Funkcje* i *Instrukcje warunkowe* i przetestuj wciaz czy dziala.
 
+### Wyrazenia logiczne i logika Boole'a
+
+...
+
 ### Instrukcje warunkowe
 
 Funkcje (niewazne czy wydaja Ci sie teraz skomplikowane czy nie) same w sobie nie pozwalaja na zbyt wiele bez inny konstruktow, dostepnych w programowaniu.<br>
@@ -200,6 +204,16 @@ book.printScore = function() {
     }
 }
 ```
+
+Instrukcje warunkowa zawsze zaczynamy od "jezeli(mojWarunek)" - `if(mojWarunek)`.<br>
+Nastepnie to, co ma sie wykonac jezeli mojWarunek jest spelniony wpisujemy w klamrach `{}`.<br>
+Nastepnie mozemy dodac inny warunek "lub jezeli(mojInnyWarunek)" - `else if(mojInnyWarunek) { ... }`. Takich "lub jezeli" mozemy dodac ile chcemy.<br>
+Instrukcje warunkowa mozemy (ale nie musimy) zakonczyc warunkiem "a w przeciwnym razie" - `else { ... }`.<br>
+
+### Zadanie 2.2
+
+Mamy jeden, nieobsluzony przypadek w naszej funkcji `printScore`, a jest nim zero. Dodaj obsluge tego warunku przy uzyciu `else if` dopisujac na poczatku komunikatu `No coz. `.
+
 
 ### HTML i struktura dokumentu strony internetowej
 
