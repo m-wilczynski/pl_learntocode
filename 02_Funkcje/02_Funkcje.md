@@ -55,7 +55,7 @@ book.dislike = function() {
 > **Zwroc uwage na slowo kluczowe `this`**, ktore uzylismy. Jest ono niczym innym jak wskazaniem "na siebie samego" wewnatrz danego obiektu.<br>
 > Dla wyzej wspomnianego obiektu trzymanego w zmiennej `book` slowo kluczowe `this` uzyte "wewnatrz tego obiektu" oznacza po prostu obiekt `book`.
 
-Skladnia funkcji to: deklaracja, ze to funkcja poprzez slowo kluczowe `function`, nawiasy "okragle" tzn. `(argument1, argument2, ...)`, ktore mowia "co wchodzi do funkcji" (w naszym przypadku nic, dlatego `()`) oraz kodu, ktory wykona sie po wywolaniu (uzyciu) funkcji w ramach klamr `{}`.<br>
+Skladnia funkcji to: deklaracja, ze to funkcja poprzez slowo kluczowe `function`, nawiasy "okragle" tzn. `(argument1, argument2, ...)`, ktore mowia "co wchodzi do funkcji" (w naszym przypadku nic, dlatego `()`) oraz kodu, ktory wykona sie po wywolaniu (uzyciu) funkcji w ramach klamr `{}`. W ramach klamr moze (ale nie musi) znajdowac sie slowo kluczowe `return`, ktore pozwala nam zwrocic wynik z funkcji. Wywolanie `return` konczy dzialanie funkcji.<br>
 W powyzszym przykladzie obiektowi `book` przypisalismy funkcje do polubienia pod nazwa `like` i funkcje do nielubienia jako `dislike`.<br>
 W jezyku JavaScript funkcje obiektu definiujemy w ten sam sposob, co przypisanie wartosci do pola tego obiektu.
 
@@ -68,6 +68,16 @@ book.dislike();
 ```
 
 Wynik powinien wyniesc -2.
+
+Przecwiczmy jeszcze wspomiane slowo kluczowe `return`:
+```javascript
+let taxes = {};
+taxes.getVat = function() { return 0.23; }
+
+//Przypiszmy teraz wynik funkcji getVat do zmiennej
+let vat = taxes.getVat();
+console.log(vat); //0.23
+```
 
 ### Reuzywalnosc funkcji
 
@@ -260,11 +270,21 @@ Instrukcje warunkowa mozemy (ale nie musimy) zakonczyc warunkiem "a w przeciwnym
 
 Mamy jeden, nieobsluzony przypadek w naszej funkcji `printScore`, a jest nim zero. Dodaj obsluge tego warunku przy uzyciu `else if` dopisujac na poczatku komunikatu `No coz. `.
 
+### Zadanie 2.3 (homework)
 
-### HTML i struktura dokumentu strony internetowej
+Dokoncz funkcje `getZodiacSign(birthdate)` przyjmujaca jeden parametr (date urodzenia) i zwracajacy nazwe znaku zodiaku.
 
-...
+```javascript
+let horoscope = {};
+horoscope.getZodiacSign = function(birthDate) {
+    let day = birthDate.getDate(); //pobierz dzien miesiaca z birthDate
+    let month = birthDate.getMonth() + 1; //pobierz numer miesiaca z birthDate (niestety w JavaScript zaczyna sie od "0", wiec musimy dodac 1)
+    
+    let zodiacSign = '';
+    
+    //Tutaj twoja czesc odpowiedzialna za przypisanie do zodiacSign wlasciwego znaku zodiaku w zaleznosci od otrzymanej daty urodzenia
+    
+    return zodiacSign;
+}
 
-### Laczymy operacje (funkcje w JavaScript) z widokiem (dokument w HTML)
-
-...
+```
