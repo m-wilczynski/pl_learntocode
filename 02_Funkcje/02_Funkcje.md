@@ -176,9 +176,55 @@ Otworz teraz DevTools (F12) i sprobuj uzyc testowej funkcji `test()`, ktora zdef
 
 Przenies to, co przecwiczylismy na poczatku tej lekcji w ramach sekcji *Funkcje* i *Instrukcje warunkowe* i przetestuj wciaz czy dziala.
 
-### Wyrazenia logiczne i logika Boole'a
+### Operatory, wyrazenia logiczne i logika Boole'a
 
-...
+W lekcji pierwszej powiedzielismy sobie o 4 typach prymitywnych (czasem nazywanymi tez "typami prostymi"). Pominmy na razie liczby zmiennoprzecinkowe.<br>
+Najbardziej naturalnym typem kojarzacym sie nam z funkcjami jest oczywiscie *liczba calkowita* - `int`. Dostepne operatory na liczbach calkowitych to m.in. `+`, `-`, `*` i `/`, sluzace do podstawowych operacji arytmetycznych.<br>
+W przykladzie z glosowaniem uzylismy operatora `+` do zwiekszania wyniku o 1.<br>
+W/w operatory beda zwracac inne liczby (calkowite lub zmiennoprzecinkowy) - tak jak w klasycznej arytmetyce.<br>
+Na liczbach calkowitych mozemy rowniez uzywac **operatorow porownania - wiekszy od `>` i mniejszy od `<`**. Ich wynikiem bedzie wartosc logiczna: `true` albo `false`:
+```javascript
+let example1 = 2 > 3; //false
+let example2 = 3 > 1; //true
+```
+
+Na liczbach, jak i na kazdym innym typie prostym mozemy uzyc rowniez **operatora porownania `==`**, ktory oznacza "czy rowna sie?".<br>
+Intencjonalnie nie uzywamy pojedynczego znaku rownosci (`=`), poniewaz w wiekszosci jezykow programowania oznacza on **przypisanie**.<br>
+Przyklad:
+```javascript
+let example3 = 3 == 3; //true
+```
+
+W programowaniu pozostale typy proste tez posiadaja swoje operatory (poza "rowna sie"), tak bysmy w podobny (do operacji arytmetycznych) sposob operowac na nich.<br>
+Chwile wczesniej przy wypisywaniu tekstu "skleilismy" dwa teksty (`string`) ze soba uzywajac operatora `+`:
+```javascript
+let myText = 'Hello`; //stworz zmienna myText
+myText = myText ` World!`;//Ustaw zmiennej myText nowa wartosc: stara wartosc myText plus doklejone ` World!`
+```
+
+Na wartosciach logicznych rowniez mozemy wykonywac operacje, niestety uzywane operatory nieco roznia sie od tych znanych z arytmetyki.<br>
+Arytmetyke na wartosciach logicznych nazywamy *logika Boole'a* (od nazwiska angielskiego matematyka).<br>
+Podstawowe operatory, ktore Ci sie najczesciej przydadza to:
+- `&&` oznaczajacy "oraz"
+- `||` oznaczajacy "lub"
+- `!` oznaczajacy negacje
+
+Przyklad dwoch pierwszych operatorow:
+```javascript
+let canRideOnLand = true; //czy moze jezdzic po ladzie?
+let canRideOnWater = false; //czy moze plywac po wodzie?
+//Jest amfibia jesli jezdzi po ladzie i plywa po wodzie
+let isAmphibous = canRideOnLand && canRideOnWater; //false
+canRideOnWater = true; //jednak uznalismy, ze tez umie plywac
+isAmphibous = canRideOnLand && canRideOnWater; //true
+```
+Przyklad negacji:
+```javascript
+let isRed = true; //jest czerwony
+let isNotRed = !isRed; //nieprawda ze "jest czerwony"
+```
+
+> Wszystkie operatory (ale tez funkcje), ktore zwracaja wartosc logiczna (`true` lub `false`) nazywamy **wyrazeniami logicznymi**.
 
 ### Instrukcje warunkowe
 
