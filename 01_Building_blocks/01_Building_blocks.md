@@ -86,7 +86,7 @@ Przy okazji tworzenia nowego obiektu (klamry: `{}`) poznalismy tez sposob korzys
 - tekstu (ang. string), ktory opisujemy w pojedynczym lub podwojnym cudzyslowiu `'to jest moj tekst'`
 - liczb calkowitych (ang. integer/int), np. `340`
 - wartosci logicznych (ang. boolean/bool): `true` lub `false`
-- liczb zmiennoprzecinkowych (ang. float, double i decimal*), np. `7.9`
+- liczb zmiennoprzecinkowych (ang. float), np. `7.9`
 
 ### Cwiczenie 1.1
 
