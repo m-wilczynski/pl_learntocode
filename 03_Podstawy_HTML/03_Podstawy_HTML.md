@@ -95,7 +95,9 @@ Wynikowa strona bedzie wygladac +/- tak:
 </br>
 ![image](https://user-images.githubusercontent.com/6330789/140816902-456338a9-8d93-4139-b6c5-d334a09c6b25.png)
 
-> **Jesli masz watpliwosci "w co wsadzic tekst czy jakis element", zawsze zacznij od `<div>`**
+> **Jesli masz watpliwosci "w co wsadzic tekst czy jakis element", zawsze zaczynaj od `<div>`**
+    
+    
     
 ### Laczymy operacje (funkcje w JavaScript) z widokiem (dokument w HTML)
 
