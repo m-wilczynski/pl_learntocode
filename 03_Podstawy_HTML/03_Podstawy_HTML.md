@@ -81,7 +81,10 @@ W tagu `<body>` dodalismy dwa tagi:
 
 ### Zadanie 3.1
 
-We wczesniej utworzonej stronie `lekcja3/index.html` sprobujmy stworzyc kopie artykulu dot. witryny/serwisu internetowego z Wikipedii:
+We wczesniej utworzonej stronie `lekcja3/index.html` sprobujmy stworzyc kopie artykulu dot. witryny/serwisu internetowego z Wikipedii.
+> :warning: **Jesli masz watpliwosci "w co wsadzic tekst lub jakis element", zawsze zaczynaj od `<div>`**
+
+Zeby stworzyc w/w artykul:
 - dodajmy naglowek o wielkosci 2 z tytulem "Serwis internetowy"
 - dodajmy sekcje opis serwisu internetowego:
 > Serwis internetowy, witryna internetowa (ang. website) – grupa powiązanych ze sobą, w celu zwiększenia funkcjonalności, stron internetowych i innych dokumentów udostępnianych w internecie z jednego adresu domenowego za pośrednictwem usługi WWW[1]. Serwisy internetowe, poza treścią statyczną, często mają sekcję wiadomości oraz oferują możliwość logowania się i zapamiętywania preferencji odbiorców w celu dostosowania treści do indywidualnych upodobań. W serwisie mogą występować obiekty interaktywne, na przykład formularze, aplikacje. 
@@ -91,13 +94,15 @@ Serwisy mogą być tematyczne, a więc poświęcone jednej dziedzinie lub kwesti
 > - wortal (portal wertykalny) – portal wyspecjalizowany, publikujący informacje z jednej dziedziny (muzyki, filmu, motoryzacji, programów komputerowych)
 > - bankowość elektroniczna – dostęp do rachunku bankowego za pomocą komputera podłączonego do internetu
     
+    
 Wynikowa strona bedzie wygladac +/- tak:
 </br>
 ![image](https://user-images.githubusercontent.com/6330789/140816902-456338a9-8d93-4139-b6c5-d334a09c6b25.png)
-
-> **Jesli masz watpliwosci "w co wsadzic tekst czy jakis element", zawsze zaczynaj od `<div>`**
     
+ > :warning: Pamietaj by zapisac dokument uzywajac `Ctrl+S`
     
+</br>
+</br>
     
 ### Laczymy operacje (funkcje w JavaScript) z widokiem (dokument w HTML)
 
