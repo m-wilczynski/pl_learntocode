@@ -106,4 +106,4 @@ Wynikowa strona bedzie wygladac +/- tak:
     
 ### Laczymy operacje (funkcje w JavaScript) z widokiem (dokument w HTML)
 
-...
+W lekcji 4.
